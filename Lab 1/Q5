@@ -6,8 +6,7 @@ for var in list(range(5)):
     var = int(input("Enter a number\n"))
     my_list.append(var)
     
-for var in my_list:
-    if var < num:
-        del my_list[var]
+filtered_list = [var for var in my_list if var >= num]
 
-print(my_list)
+
+print(filtered_list)
