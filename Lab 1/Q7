@@ -1,0 +1,8 @@
+#Write a program that accepts a word from the user and reverses it using loop.
+
+name = input("Enter a word\n")
+reversed = ''
+for char in name:
+    reversed = char + reversed
+
+print(reversed)
