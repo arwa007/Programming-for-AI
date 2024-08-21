@@ -1,0 +1,5 @@
+#1. Calculate the body mass index (BMI) of two variables input by the user, where: BMI= weight/(height)^2.
+weight = int(input("Enter Weight "))
+height = int(input("Enter Height"))
+BMI =weight/(height*height)
+print(BMI)
