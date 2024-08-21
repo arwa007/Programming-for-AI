@@ -1,0 +1,12 @@
+#Write a program that takes a list of numbers as input and returns the sum of all the elements in the list.
+
+my_list = []
+sum = 0
+for var in list(range(5)):
+    var = int(input("Enter Number:\n"))
+    my_list.append(var)
+
+for var in list(range(5)):
+    sum += my_list[var]
+
+print(sum)
