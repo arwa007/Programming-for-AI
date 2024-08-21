@@ -1,0 +1,18 @@
+#Write a program to make a simple calculator performing the four basic operations (+, -, *, /) on two numbers input by user. The following conditionsmustbe satisfied:
+# a) A ‘+’ sign must not be used foraddition.
+# b) You can only use a maximum of 3 variables. No more variables are allowed.
+# c) Your program should ask the user which operation he/she wants to perform and gives the output accordingly.
+
+num1 = float(input("Enter Number 1\n"))
+num2 = float(input("Enter Number 2\n"))
+op = (input("Enter the Operator\n"))
+
+if op == '+':
+    print(num1-(-num2))
+elif op == '-':
+    print(num1-num2)
+elif op == '/':
+    print(num1/num2)
+elif op == '*' or op == 'x':
+    print(num1*num2)
+
