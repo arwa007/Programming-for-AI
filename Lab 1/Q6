@@ -1,0 +1,20 @@
+#Aliza has got 40 Marks in Physics, 78in Chemistry and 82 in Maths. Take these marks as
+#input from user and store them in dictionary with "key as subject name" and "value as marks". By
+#accessing data stored in dictionary, print average of his marks and also print the name of subject in
+#which she got highestmarks.
+marksDict= {}
+marksDict['Physics'] = int (input("Enter Physics Marks:\n")) 
+marksDict['Maths'] = int (input("Enter Maths Marks:\n")) 
+marksDict['Chemistry'] = int (input("Enter Chemistry Marks:\n")) 
+max = -1
+sum = 0
+highest = ""
+
+for x in marksDict:
+    if marksDict[x] > max:
+        max = marksDict[x]
+        highest = x
+    sum =+ marksDict[x]
+
+print("The Highest Marks are ", max, " in ", highest)
+print("The Average is : ", sum/3)
