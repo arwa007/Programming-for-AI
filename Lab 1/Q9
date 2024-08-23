@@ -1,0 +1,6 @@
+#Write a Python program to create the multiplication table (from 1 to 10) of a number.
+
+num = int (input("Enter a number to get its multiplication table:\n"))
+for x in list(range(1,11)):
+    print(x, "x", num, " = ", x*num)
+    
