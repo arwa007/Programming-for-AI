@@ -1,0 +1,14 @@
+#Write a Python program to get the largest number from a list input from user.
+size = int(input("Enter the size of your list:\n"))
+mylist = []
+max = -9999
+
+for x in list(range(size)):
+    num = int(input("Enter Number:\n"))
+    mylist.append(num)
+
+for x in list(range(size)):   
+    if mylist[x] > max:
+        max = mylist[x]
+
+print("The largest number in your list is ", max)
