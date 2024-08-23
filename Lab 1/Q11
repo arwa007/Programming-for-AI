@@ -1,0 +1,15 @@
+# Write a program to take marks of 3 subjects as input by user and store them in a dictionary
+#having appropriate keys. Using that dictionary calculate average and percentage of those marks.
+
+marksDict= {}
+sum = 0
+
+for _ in range(3):
+    marksDict[input("Enter Subject Name: ")] = int (input("Enter Subject Marks:\n")) 
+
+for x in marksDict:
+    sum += marksDict[x]
+
+# assuming that one exam was of 50 marks
+print("The Percentage is", (sum/150)*100, "%")
+print("The Average is : ", sum/3)
