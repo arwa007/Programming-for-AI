@@ -1,0 +1,9 @@
+#Write a function that will take a number 'n' input by user and will return its factorial.
+
+def generateFactorial(n):
+    for x in range(1, n):
+        n *= x
+    return n
+
+userInput = int(input("Enter a whole number: "))
+print(generateFactorial(userInput))
