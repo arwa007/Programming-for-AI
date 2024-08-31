@@ -1,0 +1,15 @@
+#Write a Python function to multiply all the numbers in a list.
+
+product = 1
+my_list = []
+user_input = 0
+size = int(input("Enter the size of your list: "))
+
+for x in range(size):
+    user_input = int(input(f"{x+1}. Enter a number: "))
+    my_list.append(user_input)
+
+for x in my_list:
+    product *= x
+
+print(f"The product is {product}")
