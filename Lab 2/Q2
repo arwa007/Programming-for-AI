@@ -1,0 +1,17 @@
+#Ask user to enter his URL that should starts with http://www.( user url ) and then convert it into user url.com
+
+def convert_url():
+    user_input = input("Enter your URL (starting with 'http://www.'): ").strip()
+
+    
+    if user_input.startswith("http://www."):
+        user_url = user_input[len("http://www."):]
+        
+       
+        converted_url = f"{user_url}.com"
+        
+        print(f"Converted URL: {converted_url}")
+    else:
+        print("Invalid input. Please ensure the URL starts with 'http://www.'")
+
+convert_url()
