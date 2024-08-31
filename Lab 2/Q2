@@ -1,17 +1,11 @@
-#Ask user to enter his URL that should starts with http://www.( user url ) and then convert it into user url.com
+#Write a Python function to check if the last letter of user input string is a vowel or a consonant.
 
-def convert_url():
-    user_input = input("Enter your URL (starting with 'http://www.'): ").strip()
-
+def check_last_letter():
+    user_input = input("Enter your string:\n").strip()
     
-    if user_input.startswith("http://www."):
-        user_url = user_input[len("http://www."):]
-        
-       
-        converted_url = f"{user_url}.com"
-        
-        print(f"Converted URL: {converted_url}")
+    if user_input[-1].lower() in ['a', 'e', 'i', 'o', 'u']:
+        print("Ends with a vowel")
     else:
-        print("Invalid input. Please ensure the URL starts with 'http://www.'")
+        print("Ends with a consonant")
 
-convert_url()
+check_last_letter()
