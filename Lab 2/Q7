@@ -1,0 +1,35 @@
+#You have a list of daily temperatures recorded over a month. Write code to:
+# • Calculate and print the average temperature for the month.
+# • Find and print the highest and lowest temperatures.
+# • Sort the temperatures in ascending order.
+# • Remove the temperature record for a specific day
+
+temps = [25, 30, 28, 29, 23, 31, 32]
+
+sum = 0
+max = -99
+min = 100
+sorted = False
+temp = 0
+
+print(f"The temperatures are {temps}")
+
+for x in temps:
+    sum += x
+    
+    if x > max:
+        max = x
+    if x < min:
+        min = x
+
+print(f"The average is {sum/7}. The maximum is {max}. The minimum is {min}")
+
+remove = int( input("Which day's temp do you want to remove?"))
+temps.pop(remove)
+print(f"The temperatures after removal are {temps}")
+
+temps.sort()
+print(f"The temperatures after sorting are {temps}")
+
+
+
