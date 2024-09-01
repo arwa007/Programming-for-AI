@@ -1,0 +1,32 @@
+#You have a dictionary where each key is a student’s name and each value is a list of their grades. You need to perform the following operations:
+# • Add a new grade to a student's list of grades.
+# • Calculate and print the average grade for a specific student.
+# • Add a new student with an initial empty list of grades.
+# • Remove a student from the dictionary
+
+gradeList = {'Arwa' : [75, 80, 90], 'Feroze': [65, 72, 81]}
+sum = 0
+print(f"The Grade List dictionary is: {gradeList}")
+
+change = input("Whose grades do you want to add to? ")
+new = int (input("What is the new grade? "))
+
+gradeList[change] += [new] 
+print(f"The Grade List dictionary is: {gradeList}")
+
+averageName = input("Whose average do you want to find out? ")
+
+for x in gradeList[averageName]:
+    sum += x
+
+print(f"{averageName}'s average is {sum/3}.")
+
+newName = input("Enter the name of the new student:")
+
+gradeList[newName] = []
+print(f"The Grade List dictionary is: {gradeList}")
+
+delName = input("Whose name do you want to delete? ")
+
+del gradeList[delName]
+print(f"The Grade List dictionary is: {gradeList}")
